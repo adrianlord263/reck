@@ -1,0 +1,9 @@
+{
+  "sessionId": "example-session-id",
+  "selectedFares": [
+    {
+      "flightIndex": 0,
+      "fareId": "example-fare-id"
+    }
+  ]
+}

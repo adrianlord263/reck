@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flight Search UI (Aviationstack)</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:20px}
+    label{display:block;margin-top:8px}
+    input,select{padding:6px;margin-top:4px}
+    button{margin-top:10px;padding:8px 12px}
+    pre{background:#f4f4f4;padding:10px;border-radius:4px}
+    .result{margin-top:12px}
+  </style>
+</head>
+<body>
+  <h1>Flight Search (Aviationstack)</h1>
+  <div>
+    <label>Origin (IATA)
+      <input id="origin" value="DEL" />
+    </label>
+    <label>Destination (IATA)
+      <input id="destination" value="BOM" />
+    </label>
+    <label>Departure date (YYYY-MM-DD)
+      <input id="departureDate" value="2025-12-05" />
+    </label>
+    <label>Limit
+      <input id="limit" value="5" type="number" />
+    </label>
+    <button id="searchBtn">Search Flights</button>
+    <button id="fareBtn">Get Fare (best-effort)</button>
+  </div>
+
+  <div class="result">
+    <h2>Search Response</h2>
+    <pre id="searchResult">(no results yet)</pre>
+  </div>
+
+  <div class="result">
+    <h2>Fare Quote Response</h2>
+    <pre id="fareResult">(no fare quote yet)</pre>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
